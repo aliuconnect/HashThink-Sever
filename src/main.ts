@@ -22,7 +22,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new LoggingInterceptor());
   app.enableCors({
     origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   });
   const swaggerConfig = new DocumentBuilder()
